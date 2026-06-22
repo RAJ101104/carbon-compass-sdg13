@@ -41,14 +41,7 @@ You enter a few details about your everyday life — how much you drive, your el
 - Browser localStorage for the reading log
 - Google Fonts: Fraunces, Inter, JetBrains Mono
 
- Project structure
-
-
-carbon-compass/
-├── index.html      (entire application: markup, styles, and logic)
-├── README.md
-└── LICENSE
-
+ 
 
 ## Future scope
 
