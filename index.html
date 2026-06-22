@@ -58,7 +58,7 @@
 
   .wrap{ max-width: 1080px; margin: 0 auto; padding: 0 28px; position:relative; z-index:1; }
 
-  /* ---------- Header ---------- */
+  
   header{
     border-bottom: 1px solid var(--line);
     padding: 22px 0;
@@ -73,19 +73,19 @@
   .brand .mark .dot{ color: var(--sage); }
   .nav-tag{ font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text-faint); letter-spacing:.08em; }
 
-  /* ---------- Hero ---------- */
+
   .hero{ padding: 64px 0 40px; border-bottom: 1px solid var(--line); }
   .hero h1{ font-size: 46px; line-height:1.08; max-width: 720px; }
   .hero h1 em{ font-style: italic; color: var(--sage); font-weight:500; }
   .hero p.lede{ max-width: 540px; color: var(--text-dim); font-size: 16px; margin-top:16px; }
 
-  /* ---------- Section shell ---------- */
+  
   section.block{ padding: 56px 0; border-bottom: 1px solid var(--line); }
   section.block:last-of-type{ border-bottom: none; }
   .block-head{ display:flex; align-items:flex-end; justify-content:space-between; gap: 24px; margin-bottom: 28px; flex-wrap: wrap; }
   .block-head h2{ font-size: 26px; margin-top:6px; }
 
-  /* ---------- Panel / instrument card ---------- */
+ 
   .panel{
     background: var(--surface);
     border: 1px solid var(--line-strong);
@@ -94,7 +94,7 @@
   }
   .panel + .panel{ margin-top: 18px; }
 
-  /* ---------- Input grid ---------- */
+  
   .input-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 22px 28px; }
   .field{ display:flex; flex-direction:column; gap:8px; }
   .field label{ font-size: 13px; color: var(--text-dim); display:flex; justify-content:space-between; }
@@ -151,7 +151,6 @@
   .bar-track{ height:10px; border-radius:6px; background: var(--surface-2); overflow:hidden; }
   .bar-fill{ height:100%; border-radius:6px; transition: width 1s cubic-bezier(.2,.8,.2,1); }
 
-  /* ---------- Insight cards ---------- */
   .insight-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:16px; }
   .insight-card{
     background: var(--surface); border:1px solid var(--line-strong); border-radius: var(--radius);
@@ -162,7 +161,7 @@
   .insight-card p{ font-size: 13.5px; color: var(--text-dim); margin:0; }
   .insight-card .save{ margin-top:auto; font-family:'JetBrains Mono',monospace; font-size: 13px; color: var(--sage); padding-top:10px; border-top:1px solid var(--line); }
 
-  /* ---------- Chat / Ask the Compass ---------- */
+
   .chat-window{ display:flex; flex-direction:column; gap:12px; max-height: 320px; overflow-y:auto; padding-right:4px; margin-bottom:16px; }
   .msg{ max-width: 78%; padding: 11px 14px; border-radius: 12px; font-size: 13.5px; line-height:1.5; }
   .msg.bot{ background: var(--surface-2); color: var(--text); align-self:flex-start; border-bottom-left-radius:3px; }
@@ -184,7 +183,7 @@
   }
   .suggested-q button:hover{ border-color: var(--sage); color: var(--text); }
 
-  /* ---------- Goal & log ---------- */
+ 
   .goal-grid{ display:grid; grid-template-columns: 1fr 1.3fr; gap: 20px; }
   .sparkline-wrap{ margin-top: 6px; }
   .log-table{ width:100%; border-collapse: collapse; font-size: 13px; margin-top: 10px;}
@@ -193,7 +192,6 @@
   .log-table td.del{ color: var(--ember); cursor:pointer; text-align:right; font-family:'JetBrains Mono',monospace; font-size:11px; }
   .empty-log{ color: var(--text-faint); font-size: 13px; padding: 18px 0; text-align:center; }
 
-  /* ---------- Footer ---------- */
   footer{ padding: 30px 0 50px; }
   footer p{ color: var(--text-faint); font-size: 12.5px; max-width: 640px; }
 
@@ -224,7 +222,7 @@
     <p class="lede">Carbon Compass turns five minutes of everyday habits — travel, power, food, flights, waste — into a single reading, then tells you which one change would move the needle most.</p>
   </section>
 
-  <!-- ============ INPUT ============ -->
+
   <section class="block" id="input-section">
     <div class="block-head">
       <div>
@@ -300,7 +298,7 @@
     </div>
   </section>
 
-  <!-- ============ RESULTS ============ -->
+ 
   <section class="block hidden" id="results-section">
     <div class="block-head">
       <div>
@@ -326,7 +324,6 @@
     </div>
   </section>
 
-  <!-- ============ AI INSIGHTS ============ -->
   <section class="block hidden" id="insights-section">
     <div class="block-head">
       <div>
