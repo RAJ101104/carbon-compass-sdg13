@@ -1,74 +1,73 @@
  Carbon Compass
 
-An AI-powered personal carbon footprint tracker — built for SDG 13: Climate Action
+A personal carbon footprint tracker I built for my AI / Web Development final project, addressing UN Sustainable Development Goal 13: Climate Action.
 
-Carbon Compass turns five minutes of everyday lifestyle inputs (travel, electricity, diet, flights, waste) into a single, localized carbon footprint reading — then uses a rule-based AI recommendation engine to tell you exactly which change would reduce your footprint the most, instead of generic "go green" advice.
+Most carbon calculators just give you one number and generic advice like "use less plastic." I wanted to build something that actually tells you *which* of your habits is the biggest problem and *how much* changing it would actually save — backed by a simple AI recommendation engine instead of generic tips.
 
- 
+ What it does
 
+You enter a few details about your everyday life — how much you drive, your electricity use, your diet, how often you fly, and your waste habits. The app calculates your yearly carbon footprint from that, shows you where it's coming from, and then ranks the changes that would help the most, with an estimated saving in kg of CO2 for each one. There's also a small chat assistant you can ask questions like "what's my biggest source?" and it answers using your actual numbers, not a generic script.
 
  Features
 
-Instrument-panel input form — sliders & dropdowns for transport, electricity, diet, flights, and waste, with localized electricity grid presets (India grid, global average, renewable-heavy, USA).
-Carbon Dial — a custom SVG radial gauge showing your total annual footprint against three reference lines: your 1.5 °C-aligned target, the India average, and the global average.
-Category breakdown — animated bars showing exactly how much each category contributes, in kg CO₂e and %.
-AI recommendation engine — ranks your top emission sources and generates specific, quantified actions (e.g. *"saves ≈280 kg CO₂e/year"*).
-Ask the Compass — a conversational assistant that answers natural-language questions about *your own* results.
-Goal-setting & trend log — set a reduction target, save readings to your browser's local storage, and track a trend line over time.
-100% client-side & private — no server, no network calls, no data leaves your device. Works completely offline once the page is loaded (aside from optional Google Fonts).
+- Input form with sliders and dropdowns for transport, electricity, diet, flights, and waste, including a choice of electricity grid (India, global average, renewable-heavy, USA) so the numbers are localized rather than US/UK-default.
+- A radial gauge ("the Carbon Dial") showing your total footprint against three reference lines: a 1.5°C-aligned personal target, the India average, and the global average.
+- A breakdown of exactly how many kg and what percentage each category contributes.
+- A rule-based AI engine that ranks your biggest emission sources and suggests a specific action for each, with an estimated annual saving.
+- "Ask the Compass" — a small chat box that answers questions about your own results.
+- A goal slider and a log so you can save multiple readings and see a trend line over time.
+- Everything runs in the browser. No server, no account, no data leaves your device.
 
- Getting started
+ How to use the app
+
+1. Open `index.html` in your browser — double-clicking the file is enough, nothing to install.
+2. Adjust the sliders and dropdowns under "Take a reading" (transport, electricity, diet, flights, waste), or just leave the default values if you want a quick example.
+3. Click **Calculate footprint**.
+4. The page scrolls down to "Your reading" — the dial shows your total footprint in tonnes of CO2 per year, and the bars next to it show which category is contributing the most.
+5. Scroll down to "Where to act first" to see the three AI-generated recommendations, ranked by impact.
+6. Try "Ask the Compass" — type a question such as "what's my biggest source?" or "how do I cut my transport footprint?" and it will answer using your own numbers.
+7. Under "Set a target, track your trend," move the reduction-target slider to see what a percentage cut means in tonnes, then click **Save this reading to my log**. Change a slider, recalculate, and save again to watch the trend line update.
+
+ Running it locally
 
 No installation, build step, or server required.
 
-1. Download / clone this repository.
-2. Open `index.html` in any modern browser (Chrome, Edge, Firefox, Safari).
-3. Move the sliders, pick your diet and grid, and click **Calculate footprint →**.
 
-```bash
-git clone https://github.com/<your-username>/carbon-compass.git
+git clone https://github.com/RAJ101104/carbon-compass.git
 cd carbon-compass
 open index.html      # macOS
 # or just double-click index.html on Windows/Linux
-```
 
-## 🧮 Methodology
 
-Emission factors are approximate, illustrative averages compiled from publicly available references (Our World in Data, UNEP Emissions Gap Report, EDGAR/JRC, IEA, UK DEFRA conversion factors). This is an educational prototype, **not** a certified carbon audit tool.
 
-| Reference line | Value | Source basis |
-|---|---|---|
-| 1.5 °C-aligned individual target | ≈ 2.3 t CO₂e / year by 2030 | Widely cited "fair share" climate target research |
-| India per-capita average | ≈ 2.2 t CO₂ / year | Global Carbon Project / Our World in Data |
-| Global per-capita GHG average | ≈ 6.4 t CO₂e / year | UNEP Emissions Gap Report |
 
-## 🛠️ Tech stack
+ Tech stack
 
-- HTML5, CSS3 (custom properties, Grid), Vanilla JavaScript — no frameworks, no build tools
-- Hand-built SVG for the gauge, bar charts, and trend sparkline (no charting library dependency)
-- Rule-based recommendation + intent-matching engine for the "AI" layer
-- Browser `localStorage` for the reading log
+- HTML5, CSS3 (custom properties, Grid), vanilla JavaScript — no frameworks, no build tools
+- Hand-built SVG for the gauge, bar charts, and trend sparkline, so there's no charting library dependency
+- A rule-based recommendation and keyword-matching engine for the AI layer
+- Browser localStorage for the reading log
 - Google Fonts: Fraunces, Inter, JetBrains Mono
 
-## 📂 Project structure
+ Project structure
 
-```
+
 carbon-compass/
-├── index.html      # entire application (markup + styles + logic)
+├── index.html      (entire application: markup, styles, and logic)
 ├── README.md
 └── LICENSE
-```
 
-## 🔭 Future scope
 
-- Swap the rule-based assistant for a true generative model (Anthropic/OpenAI API) via a thin backend
-- More granular emission factors (vehicle/fuel type, live regional grid-mix data)
-- Auto-fill travel data via Maps/transit APIs instead of manual sliders
-- Native mobile app with reminders
-- Classroom/office group challenges with opt-in shared leaderboards
+## Future scope
+
+- Swap the rule-based assistant for a real generative model (Anthropic or OpenAI API) through a small backend
+- More granular emission factors — vehicle/fuel type, live regional grid-mix data
+- Auto-fill travel data through a maps/transit API instead of manual sliders
+- A native mobile app with reminders
+- Classroom or office group challenges with opt-in shared leaderboards
 - Multi-language support
-- Exportable PDF footprint report
+- An exportable PDF footprint report
 
-## 📄 License
+## License
 
 MIT — see [LICENSE](LICENSE).
