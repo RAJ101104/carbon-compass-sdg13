@@ -1,24 +1,23 @@
-# 🧭 Carbon Compass
+ Carbon Compass
 
-**An AI-powered personal carbon footprint tracker — built for SDG 13: Climate Action**
+An AI-powered personal carbon footprint tracker — built for SDG 13: Climate Action
 
 Carbon Compass turns five minutes of everyday lifestyle inputs (travel, electricity, diet, flights, waste) into a single, localized carbon footprint reading — then uses a rule-based AI recommendation engine to tell you exactly which change would reduce your footprint the most, instead of generic "go green" advice.
 
-> 🎓 Built as an AI / Web Development capstone project addressing UN Sustainable Development Goal 13 (Climate Action).
+ 
 
----
 
-## ✨ Features
+ Features
 
-- **Instrument-panel input form** — sliders & dropdowns for transport, electricity, diet, flights, and waste, with localized electricity grid presets (India grid, global average, renewable-heavy, USA).
-- **Carbon Dial** — a custom SVG radial gauge showing your total annual footprint against three reference lines: your 1.5 °C-aligned target, the India average, and the global average.
-- **Category breakdown** — animated bars showing exactly how much each category contributes, in kg CO₂e and %.
-- **AI recommendation engine** — ranks your top emission sources and generates specific, quantified actions (e.g. *"saves ≈280 kg CO₂e/year"*).
-- **Ask the Compass** — a conversational assistant that answers natural-language questions about *your own* results.
-- **Goal-setting & trend log** — set a reduction target, save readings to your browser's local storage, and track a trend line over time.
-- **100% client-side & private** — no server, no network calls, no data leaves your device. Works completely offline once the page is loaded (aside from optional Google Fonts).
+Instrument-panel input form — sliders & dropdowns for transport, electricity, diet, flights, and waste, with localized electricity grid presets (India grid, global average, renewable-heavy, USA).
+Carbon Dial — a custom SVG radial gauge showing your total annual footprint against three reference lines: your 1.5 °C-aligned target, the India average, and the global average.
+Category breakdown — animated bars showing exactly how much each category contributes, in kg CO₂e and %.
+AI recommendation engine — ranks your top emission sources and generates specific, quantified actions (e.g. *"saves ≈280 kg CO₂e/year"*).
+Ask the Compass — a conversational assistant that answers natural-language questions about *your own* results.
+Goal-setting & trend log — set a reduction target, save readings to your browser's local storage, and track a trend line over time.
+100% client-side & private — no server, no network calls, no data leaves your device. Works completely offline once the page is loaded (aside from optional Google Fonts).
 
-## 🚀 Getting started
+ Getting started
 
 No installation, build step, or server required.
 
