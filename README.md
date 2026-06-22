@@ -28,15 +28,7 @@ You enter a few details about your everyday life — how much you drive, your el
 6. Try "Ask the Compass" — type a question such as "what's my biggest source?" or "how do I cut my transport footprint?" and it will answer using your own numbers.
 7. Under "Set a target, track your trend," move the reduction-target slider to see what a percentage cut means in tonnes, then click **Save this reading to my log**. Change a slider, recalculate, and save again to watch the trend line update.
 
- Running it locally
 
-No installation, build step, or server required.
-
-
-git clone https://github.com/RAJ101104/carbon-compass.git
-cd carbon-compass
-open index.html      # macOS
-# or just double-click index.html on Windows/Linux
 
 
 
